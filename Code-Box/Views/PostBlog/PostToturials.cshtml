@@ -1,0 +1,112 @@
+﻿@model Code_Box.Models.BlogViewModel
+
+@{
+    ViewBag.Title = "PostToturials";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<script src="~/Scripts/angular.js"></script>
+<script src="~/Scripts/tinymce/tiny_mce.js"></script>
+<script src="~/Scripts/AngularJS/Admin/PostBlogModule.js"></script>
+<script src="~/Scripts/AngularJS/Admin/PostBlogController.js"></script>
+<script src="~/Scripts/AngularJS/Admin/Services.js"></script>
+
+<section id="portfolio">
+    <div class="container container-custom">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-2 col-sm-4">
+                    <div class="navbar-header">
+                        <button type="button" data-target="#SidenavbarCollapse"  data-toggle="collapse" class="navbar-toggle-left glyphicon glyphicon-th-large"></button>
+                    </div>
+                    <div id="SidenavbarCollapse" class="collapse navbar-collapse">
+                        <ul class=" nav nav-list">
+                            <li><a href="#home">Post Blogs For Tutorials </a></li>
+                            <li class="nav-divider"></li>
+                            <li><a href="#profile">Update User Data</a></li>
+                            <li class="nav-divider"></li>
+                            <li><a href="#messages">Add New Articles</a></li>
+                            <li class="nav-divider"></li>
+                            @*<li class="nav-divider"></li>
+                    <li><a href="#settings">First MVC App</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="#profile">Folder Structure</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="#messages">Routing</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="#settings">Controller</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="#profile">Action Methods</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="#messages">Action Selector</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="#settings">Action Verbs</a></li>*@
+                        </ul>
+                    </div>
+                </div>
+                <!--Middle Area-->
+                <div class="col-md-10 col-sm-4">
+                    <div class="container">
+                        <div class="panel">
+                            <div class="panel-info panel-heading">
+                                <p><h6>Post Tutorial For Various Courses</h6></p>
+                            </div>
+                            <div class="panel-body panel-success">
+                                <form class="form-horizontal" data-ng-app="AdminPostBlog"  data-ng-controller="CourseController" >
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2 small" for="email">Blog Header:</label>
+                                        <div class="col-sm-6 small">
+                                            @Html.TextBoxFor(m => m.Blog_Heading, new { @class = "form-control", @placeholder = "Enter Blog Header" })
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2 small">Course Type:</label>
+                                        <div class="col-sm-4">
+                                            <select  id="courseId" class="form-control" ng-change="FillTopic()" ng-model="col">
+                                                <option value="">--Select Courses--</option>
+                                                <option  ng-repeat="c in Courses track by $index" value="{{c.CoursesID}}">{{c.CourseName}}</option>                                               
+                                            </select>                                            
+                                        </div>
+                                    </div>                                   
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-2 small" for="email">Topic Name:</label>
+                                            <div class="col-sm-4">
+                                                <select class="form-control small">
+                                                    <option value="">--Select Topices--</option>
+                                                    <option ng-repeat="t in Topices track by $index" value="{{t.id}}">{{t.navName}}</option>
+                                                </select>
+                                            </div>
+                                        </div>   
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2 col-sm-2" for="email">Description:</label>
+                                        <div class="col-sm-6">
+                                            @Html.TextBoxFor(m => m.Description, new { @class = "form-control", @placeholder = "Enter Description" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2 small" for="email">Details:</label>
+                                        <div class="col-sm-4">
+                                            @Html.EditorFor(model => model.PageContent, new { @class = "col-sm-4" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-info btn-sm">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .nav-list {
+        width:200px;
+    }
+</style>

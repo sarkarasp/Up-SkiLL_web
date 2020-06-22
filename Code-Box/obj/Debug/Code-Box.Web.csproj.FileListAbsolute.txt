@@ -1,0 +1,145 @@
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\roslyn\csc.exe
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\roslyn\vbc.exe
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\roslyn\VBCSCompiler.exe
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Code-Box.dll.config
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Code-Box.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Code-Box.pdb
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Antlr3.Runtime.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Code-Box.Domain.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\EntityFramework.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\EntityFramework.SqlServer.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Newtonsoft.Json.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Owin.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.Helpers.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.Mvc.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.Optimization.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.Razor.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.WebPages.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.WebPages.Razor.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\WebGrease.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Code-Box.Domain.pdb
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.Helpers.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.Mvc.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.Optimization.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.Razor.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.WebPages.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\System.Web.WebPages.Razor.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Antlr3.Runtime.pdb
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Newtonsoft.Json.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\EntityFramework.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\EntityFramework.SqlServer.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\obj\Debug\Code-Box.Web.csprojResolveAssemblyReference.cache
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\obj\Debug\Code-Box.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box\obj\Debug\Code-Box.pdb
+E:\Code-Box\Code-Box\bin\roslyn\csc.exe
+E:\Code-Box\Code-Box\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Code-Box\Code-Box\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Code-Box\Code-Box\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Code-Box\Code-Box\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Code-Box\Code-Box\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Code-Box\Code-Box\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Code-Box\Code-Box\bin\roslyn\System.Collections.Immutable.dll
+E:\Code-Box\Code-Box\bin\roslyn\System.Reflection.Metadata.dll
+E:\Code-Box\Code-Box\bin\roslyn\vbc.exe
+E:\Code-Box\Code-Box\bin\roslyn\VBCSCompiler.exe
+E:\Code-Box\Code-Box\bin\roslyn\VBCSCompiler.exe.config
+E:\Code-Box\Code-Box\bin\Code-Box.dll.config
+E:\Code-Box\Code-Box\bin\Code-Box.dll
+E:\Code-Box\Code-Box\bin\Code-Box.pdb
+E:\Code-Box\Code-Box\bin\Antlr3.Runtime.dll
+E:\Code-Box\Code-Box\bin\Code-Box.Domain.dll
+E:\Code-Box\Code-Box\bin\EntityFramework.dll
+E:\Code-Box\Code-Box\bin\EntityFramework.SqlServer.dll
+E:\Code-Box\Code-Box\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Code-Box\Code-Box\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Code-Box\Code-Box\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Code-Box\Code-Box\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.dll
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.dll
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Google.dll
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Code-Box\Code-Box\bin\Microsoft.Web.Infrastructure.dll
+E:\Code-Box\Code-Box\bin\Newtonsoft.Json.dll
+E:\Code-Box\Code-Box\bin\Owin.dll
+E:\Code-Box\Code-Box\bin\System.Web.Helpers.dll
+E:\Code-Box\Code-Box\bin\System.Web.Mvc.dll
+E:\Code-Box\Code-Box\bin\System.Web.Optimization.dll
+E:\Code-Box\Code-Box\bin\System.Web.Razor.dll
+E:\Code-Box\Code-Box\bin\System.Web.WebPages.Deployment.dll
+E:\Code-Box\Code-Box\bin\System.Web.WebPages.dll
+E:\Code-Box\Code-Box\bin\System.Web.WebPages.Razor.dll
+E:\Code-Box\Code-Box\bin\WebGrease.dll
+E:\Code-Box\Code-Box\bin\Code-Box.Domain.pdb
+E:\Code-Box\Code-Box\bin\Code-Box.Domain.dll.config
+E:\Code-Box\Code-Box\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Code-Box\Code-Box\bin\System.Web.Helpers.xml
+E:\Code-Box\Code-Box\bin\System.Web.Mvc.xml
+E:\Code-Box\Code-Box\bin\System.Web.Optimization.xml
+E:\Code-Box\Code-Box\bin\System.Web.Razor.xml
+E:\Code-Box\Code-Box\bin\System.Web.WebPages.xml
+E:\Code-Box\Code-Box\bin\System.Web.WebPages.Deployment.xml
+E:\Code-Box\Code-Box\bin\System.Web.WebPages.Razor.xml
+E:\Code-Box\Code-Box\bin\Antlr3.Runtime.pdb
+E:\Code-Box\Code-Box\bin\Newtonsoft.Json.xml
+E:\Code-Box\Code-Box\bin\EntityFramework.xml
+E:\Code-Box\Code-Box\bin\EntityFramework.SqlServer.xml
+E:\Code-Box\Code-Box\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Code-Box\Code-Box\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Code-Box\Code-Box\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.xml
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.xml
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Google.xml
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Code-Box\Code-Box\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Code-Box\Code-Box\obj\Debug\Code-Box.Web.csprojAssemblyReference.cache
+E:\Code-Box\Code-Box\obj\Debug\Code-Box.Web.csproj.CoreCompileInputs.cache
+E:\Code-Box\Code-Box\obj\Debug\Code-Box.Web.csproj.CopyComplete
+E:\Code-Box\Code-Box\obj\Debug\Code-Box.dll
+E:\Code-Box\Code-Box\obj\Debug\Code-Box.pdb

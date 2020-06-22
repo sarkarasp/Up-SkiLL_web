@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+   <link href="~/Content/freelancer.css" rel="stylesheet" />
+    @*<link href="~/Content/freelancer.min.css" rel="stylesheet" />*@
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+<body id="page-top" class="index">
+   
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    <span style="text-align:center; margin-top:15px;">Up-SkiLL</span>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Home</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Tutorials <b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="~/CSharp/CSharpTutorial?courseId=1&&topicId=1">C# sarkar</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Microsoft Azure</a></li>
+                            <li class="divider"></li>
+                            <li><a href="~/CSharp/CSharpTutorial?courseId=2&&topicId=1">ASP.NET MVC</a></li>
+                            <li class="divider"></li>                           
+                            
+                        </ul>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Interview Q & A</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="~/Blog">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+    <div class="body-content">
+        @RenderBody()
+        <hr />
+        @*<footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>*@
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="footer-above">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase font-weight-bold" >About Up-SkiLL</h6>
+                            <p>
+                               welcomme to Up-SkiLL online tutorials.
+                            </p>
+                    </div>
+
+                        <div class="col-lg-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase font-weight-bold"> Around the Web</h6>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                   </li>                                   
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                    </li>
+                                   
+                                </ul>
+</div>
+
+                        <div class="col-lg-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                            <h6 class="text-uppercase font-weight-bold">Tutorials</h6>
+
+                            <p>
+                                <span class="glyphicon glyphicon-bookmark"><a href="#!"> Azure&nbsp; </a></span>
+                            </p>
+                            <br />
+                            <p>
+                                <span class="glyphicon glyphicon-bookmark"> <a href="#!"> MVC&nbsp; </a></span>
+                            </p>
+                            <br />
+                            <p>
+                                
+                                <span class="glyphicon glyphicon-bookmark"> <a href="#!">WebAPI</a> </span>
+                            </p>
+                            <br />
+                            <p>
+                                <span class="glyphicon glyphicon-bookmark">  <a href="#!">C#.Net</a></span>
+                            
+                            </p>
+
+                        </div>
+                    
+                        <div class="col-lg-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase font-weight-bold" >Get in Touch</h6>
+                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="footer-below">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            Copyright &copy; Your Website 2016
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

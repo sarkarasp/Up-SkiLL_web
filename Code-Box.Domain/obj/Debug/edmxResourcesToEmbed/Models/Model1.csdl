@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="up_skill_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BlogContentList">
+    <Key>
+      <PropertyRef Name="blogId" />
+    </Key>
+    <Property Name="blogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="blogHeader" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="contents" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Cours">
+    <Key>
+      <PropertyRef Name="blogId" />
+    </Key>
+    <Property Name="blogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="blogHeader" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Courses_tb">
+    <Key>
+      <PropertyRef Name="CoursesID" />
+    </Key>
+    <Property Name="CoursesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CourseName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="TopicDetails_tb" Relationship="Self.FK_TopicDetails_tb_Courses_tb" FromRole="Courses_tb" ToRole="TopicDetails_tb" />
+    <NavigationProperty Name="Vertical_Nav_tb" Relationship="Self.FK_Vertical_Nav_tb_Courses_tb" FromRole="Courses_tb" ToRole="Vertical_Nav_tb" />
+    <NavigationProperty Name="vertical_tab_list_tb" Relationship="Self.FK_vertical_tab_list_tb_Courses_tb" FromRole="Courses_tb" ToRole="vertical_tab_list_tb" />
+  </EntityType>
+  <EntityType Name="SideNavigationMenuAdmin_tb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="TopicDetails_tb">
+    <Key>
+      <PropertyRef Name="TopicDetailsId" />
+    </Key>
+    <Property Name="TopicDetailsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TopicId" Type="Int32" />
+    <Property Name="TopicName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TechnologyType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PostedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="TopicDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CourseID" Type="Int32" />
+    <NavigationProperty Name="Courses_tb" Relationship="Self.FK_TopicDetails_tb_Courses_tb" FromRole="TopicDetails_tb" ToRole="Courses_tb" />
+    <NavigationProperty Name="Vertical_Nav_tb" Relationship="Self.FK_TopicDetails_tb_Vertical_Nav_tb" FromRole="TopicDetails_tb" ToRole="Vertical_Nav_tb" />
+    <Property Name="TopicPath" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Vertical_Nav_tb">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="navName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+    <Property Name="CourseID" Type="Int32" />
+    <NavigationProperty Name="Courses_tb" Relationship="Self.FK_Vertical_Nav_tb_Courses_tb" FromRole="Vertical_Nav_tb" ToRole="Courses_tb" />
+    <NavigationProperty Name="TopicDetails_tb" Relationship="Self.FK_TopicDetails_tb_Vertical_Nav_tb" FromRole="Vertical_Nav_tb" ToRole="TopicDetails_tb" />
+    <NavigationProperty Name="vertical_tab_list_tb" Relationship="Self.FK_vertical_tab_list_tb_Vertical_Nav_tb" FromRole="Vertical_Nav_tb" ToRole="vertical_tab_list_tb" />
+  </EntityType>
+  <EntityType Name="vertical_tab_list_tb">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="CourseID" Type="Int32" />
+    <Property Name="TopicID" Type="Int32" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Courses_tb" Relationship="Self.FK_vertical_tab_list_tb_Courses_tb" FromRole="vertical_tab_list_tb" ToRole="Courses_tb" />
+    <NavigationProperty Name="Vertical_Nav_tb" Relationship="Self.FK_vertical_tab_list_tb_Vertical_Nav_tb" FromRole="vertical_tab_list_tb" ToRole="Vertical_Nav_tb" />
+  </EntityType>
+  <Association Name="FK_TopicDetails_tb_Courses_tb">
+    <End Role="Courses_tb" Type="Self.Courses_tb" Multiplicity="0..1" />
+    <End Role="TopicDetails_tb" Type="Self.TopicDetails_tb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Courses_tb">
+        <PropertyRef Name="CoursesID" />
+      </Principal>
+      <Dependent Role="TopicDetails_tb">
+        <PropertyRef Name="CourseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vertical_Nav_tb_Courses_tb">
+    <End Role="Courses_tb" Type="Self.Courses_tb" Multiplicity="0..1" />
+    <End Role="Vertical_Nav_tb" Type="Self.Vertical_Nav_tb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Courses_tb">
+        <PropertyRef Name="CoursesID" />
+      </Principal>
+      <Dependent Role="Vertical_Nav_tb">
+        <PropertyRef Name="CourseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_vertical_tab_list_tb_Courses_tb">
+    <End Role="Courses_tb" Type="Self.Courses_tb" Multiplicity="0..1" />
+    <End Role="vertical_tab_list_tb" Type="Self.vertical_tab_list_tb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Courses_tb">
+        <PropertyRef Name="CoursesID" />
+      </Principal>
+      <Dependent Role="vertical_tab_list_tb">
+        <PropertyRef Name="CourseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TopicDetails_tb_Vertical_Nav_tb">
+    <End Role="Vertical_Nav_tb" Type="Self.Vertical_Nav_tb" Multiplicity="0..1" />
+    <End Role="TopicDetails_tb" Type="Self.TopicDetails_tb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vertical_Nav_tb">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="TopicDetails_tb">
+        <PropertyRef Name="TopicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_vertical_tab_list_tb_Vertical_Nav_tb">
+    <End Role="Vertical_Nav_tb" Type="Self.Vertical_Nav_tb" Multiplicity="0..1" />
+    <End Role="vertical_tab_list_tb" Type="Self.vertical_tab_list_tb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vertical_Nav_tb">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="vertical_tab_list_tb">
+        <PropertyRef Name="TopicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="up_skill_dbEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="BlogContentLists" EntityType="Self.BlogContentList" />
+    <EntitySet Name="Courses" EntityType="Self.Cours" />
+    <EntitySet Name="Courses_tb" EntityType="Self.Courses_tb" />
+    <EntitySet Name="SideNavigationMenuAdmin_tb" EntityType="Self.SideNavigationMenuAdmin_tb" />
+    <EntitySet Name="TopicDetails_tb" EntityType="Self.TopicDetails_tb" />
+    <EntitySet Name="Vertical_Nav_tb" EntityType="Self.Vertical_Nav_tb" />
+    <EntitySet Name="vertical_tab_list_tb" EntityType="Self.vertical_tab_list_tb" />
+    <AssociationSet Name="FK_TopicDetails_tb_Courses_tb" Association="Self.FK_TopicDetails_tb_Courses_tb">
+      <End Role="Courses_tb" EntitySet="Courses_tb" />
+      <End Role="TopicDetails_tb" EntitySet="TopicDetails_tb" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vertical_Nav_tb_Courses_tb" Association="Self.FK_Vertical_Nav_tb_Courses_tb">
+      <End Role="Courses_tb" EntitySet="Courses_tb" />
+      <End Role="Vertical_Nav_tb" EntitySet="Vertical_Nav_tb" />
+    </AssociationSet>
+    <AssociationSet Name="FK_vertical_tab_list_tb_Courses_tb" Association="Self.FK_vertical_tab_list_tb_Courses_tb">
+      <End Role="Courses_tb" EntitySet="Courses_tb" />
+      <End Role="vertical_tab_list_tb" EntitySet="vertical_tab_list_tb" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TopicDetails_tb_Vertical_Nav_tb" Association="Self.FK_TopicDetails_tb_Vertical_Nav_tb">
+      <End Role="Vertical_Nav_tb" EntitySet="Vertical_Nav_tb" />
+      <End Role="TopicDetails_tb" EntitySet="TopicDetails_tb" />
+    </AssociationSet>
+    <AssociationSet Name="FK_vertical_tab_list_tb_Vertical_Nav_tb" Association="Self.FK_vertical_tab_list_tb_Vertical_Nav_tb">
+      <End Role="Vertical_Nav_tb" EntitySet="Vertical_Nav_tb" />
+      <End Role="vertical_tab_list_tb" EntitySet="vertical_tab_list_tb" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

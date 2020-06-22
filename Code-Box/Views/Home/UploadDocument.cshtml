@@ -1,0 +1,112 @@
+﻿@model Code_Box.Models.TopicDetailModel
+
+@{
+    ViewBag.Title = "UploadDocument";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<br />
+<br />
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+@using (Html.BeginForm("UploadDocument", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TopicDetailModel</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CourseNames, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @*  @Html.DropDownList("TopicNameList",new SelectList(ViewBag.Topics, "id", "navName"), htmlAttributes: new { @class = "control-label col-md-4" })*@
+                @Html.DropDownListFor(x => x.CourseId, Model.CourseNames, "--Select--", new { @id = "ddlCourse", @class = "control-label col-md-4" })
+                @Html.ValidationMessageFor(model => model.CourseNames, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TopicNames, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @*  @Html.DropDownList("TopicNameList",new SelectList(ViewBag.Topics, "id", "navName"), htmlAttributes: new { @class = "control-label col-md-4" })*@
+                @Html.DropDownListFor(x => x.TopicId, new List<SelectListItem>(), "--Select--", new { @id = "ddlTopic" });
+                @Html.ValidationMessageFor(model => model.TopicNames, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.TechnologyType, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.TechnologyType, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TechnologyType, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PostedBy, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.PostedBy, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PostedBy, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CreatedDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.CreatedDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CreatedDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TopicDetails, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.TopicDetails, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TopicDetails, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TopicPath, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.TopicPath, new { type = "file", id = "UploadFile" })
+                @Html.ValidationMessageFor(model => model.TopicPath, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-6">
+                <input type="submit" value="Create" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('#ddlCourse').change(function () {
+            $.ajax({
+                type: "post",
+                url: "/Home/GetTopics",
+                data: { courseId: $('#ddlCourse').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+                    var Topic = "<select id='ddlTopic'>";
+                    Topic = Topic + '<option value="">--Select--</option>';
+                    for (var i = 0; i < data.length; i++)
+                    {
+                        Topic = Topic + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    Topic = Topic + '</select>';
+                    $('#ddlTopic').html(Topic);
+                }
+            });
+        });
+    });
+</script>  

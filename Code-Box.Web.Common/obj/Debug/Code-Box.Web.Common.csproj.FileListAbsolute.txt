@@ -1,0 +1,6 @@
+E:\Code-Box\Code-Box.Web.Common\bin\Debug\Code-Box.Web.Common.dll
+E:\Code-Box\Code-Box.Web.Common\bin\Debug\Code-Box.Web.Common.pdb
+E:\Code-Box\Code-Box.Web.Common\obj\Debug\Code-Box.Web.Common.csprojAssemblyReference.cache
+E:\Code-Box\Code-Box.Web.Common\obj\Debug\Code-Box.Web.Common.csproj.CoreCompileInputs.cache
+E:\Code-Box\Code-Box.Web.Common\obj\Debug\Code-Box.Web.Common.dll
+E:\Code-Box\Code-Box.Web.Common\obj\Debug\Code-Box.Web.Common.pdb

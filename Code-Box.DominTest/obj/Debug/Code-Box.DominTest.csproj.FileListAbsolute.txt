@@ -1,0 +1,29 @@
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.DominTest\bin\Debug\Code-Box.DominTest.dll.config
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.DominTest\bin\Debug\Code-Box.DominTest.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.DominTest\bin\Debug\Code-Box.DominTest.pdb
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.DominTest\bin\Debug\Code-Box.Domain.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.DominTest\bin\Debug\EntityFramework.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.DominTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.DominTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.DominTest\bin\Debug\Code-Box.Domain.pdb
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.DominTest\bin\Debug\EntityFramework.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.DominTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.DominTest\obj\Debug\Code-Box.DominTest.csprojResolveAssemblyReference.cache
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.DominTest\obj\Debug\Code-Box.DominTest.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.DominTest\obj\Debug\Code-Box.DominTest.pdb
+E:\Code-Box\Code-Box.DominTest\bin\Debug\Code-Box.DominTest.dll.config
+E:\Code-Box\Code-Box.DominTest\bin\Debug\Code-Box.DominTest.dll
+E:\Code-Box\Code-Box.DominTest\bin\Debug\Code-Box.DominTest.pdb
+E:\Code-Box\Code-Box.DominTest\bin\Debug\Code-Box.Domain.dll
+E:\Code-Box\Code-Box.DominTest\bin\Debug\EntityFramework.dll
+E:\Code-Box\Code-Box.DominTest\bin\Debug\EntityFramework.SqlServer.dll
+E:\Code-Box\Code-Box.DominTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Code-Box\Code-Box.DominTest\bin\Debug\Code-Box.Domain.pdb
+E:\Code-Box\Code-Box.DominTest\bin\Debug\Code-Box.Domain.dll.config
+E:\Code-Box\Code-Box.DominTest\bin\Debug\EntityFramework.xml
+E:\Code-Box\Code-Box.DominTest\bin\Debug\EntityFramework.SqlServer.xml
+E:\Code-Box\Code-Box.DominTest\obj\Debug\Code-Box.DominTest.csprojAssemblyReference.cache
+E:\Code-Box\Code-Box.DominTest\obj\Debug\Code-Box.DominTest.csproj.CoreCompileInputs.cache
+E:\Code-Box\Code-Box.DominTest\obj\Debug\Code-Box.DominTest.csproj.CopyComplete
+E:\Code-Box\Code-Box.DominTest\obj\Debug\Code-Box.DominTest.dll
+E:\Code-Box\Code-Box.DominTest\obj\Debug\Code-Box.DominTest.pdb

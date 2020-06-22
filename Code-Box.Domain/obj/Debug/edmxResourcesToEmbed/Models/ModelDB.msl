@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="up_skill_dbModelStoreContainer" CdmEntityContainer="up_skill_dbEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="up_skill_dbModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BlogContentLists">
+      <EntityTypeMapping TypeName="up_skill_dbModel.BlogContentList">
+        <MappingFragment StoreEntitySet="BlogContentList">
+          <ScalarProperty Name="blogId" ColumnName="blogId" />
+          <ScalarProperty Name="blogHeader" ColumnName="blogHeader" />
+          <ScalarProperty Name="contents" ColumnName="contents" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="up_skill_dbModel.Cours">
+        <MappingFragment StoreEntitySet="Courses">
+          <ScalarProperty Name="blogId" ColumnName="blogId" />
+          <ScalarProperty Name="blogHeader" ColumnName="blogHeader" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courses_tb">
+      <EntityTypeMapping TypeName="up_skill_dbModel.Courses_tb">
+        <MappingFragment StoreEntitySet="Courses_tb">
+          <ScalarProperty Name="CoursesID" ColumnName="CoursesID" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SideNavigationMenuAdmin_tb">
+      <EntityTypeMapping TypeName="up_skill_dbModel.SideNavigationMenuAdmin_tb">
+        <MappingFragment StoreEntitySet="SideNavigationMenuAdmin_tb">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TopicDetails_tb">
+      <EntityTypeMapping TypeName="up_skill_dbModel.TopicDetails_tb">
+        <MappingFragment StoreEntitySet="TopicDetails_tb">
+          <ScalarProperty Name="TopicDetailsId" ColumnName="TopicDetailsId" />
+          <ScalarProperty Name="TopicId" ColumnName="TopicId" />
+          <ScalarProperty Name="TopicName" ColumnName="TopicName" />
+          <ScalarProperty Name="TechnologyType" ColumnName="TechnologyType" />
+          <ScalarProperty Name="PostedBy" ColumnName="PostedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="TopicDetails" ColumnName="TopicDetails" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vertical_Nav_tb">
+      <EntityTypeMapping TypeName="up_skill_dbModel.Vertical_Nav_tb">
+        <MappingFragment StoreEntitySet="Vertical_Nav_tb">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="navName" ColumnName="navName" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vertical_tab_list_tb">
+      <EntityTypeMapping TypeName="up_skill_dbModel.vertical_tab_list_tb">
+        <MappingFragment StoreEntitySet="vertical_tab_list_tb">
+          <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+          <ScalarProperty Name="TopicID" ColumnName="TopicID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

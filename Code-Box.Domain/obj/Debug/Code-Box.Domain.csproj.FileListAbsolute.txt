@@ -1,0 +1,21 @@
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.Domain\bin\Debug\Code-Box.Domain.dll.config
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.Domain\bin\Debug\Code-Box.Domain.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.Domain\bin\Debug\Code-Box.Domain.pdb
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.Domain\bin\Debug\EntityFramework.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.Domain\bin\Debug\EntityFramework.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.Domain\obj\Debug\Code-Box.Domain.dll
+C:\Users\sudiptos\documents\visual studio 2015\Projects\Code-Box\Code-Box.Domain\obj\Debug\Code-Box.Domain.pdb
+E:\Code-Box\Code-Box.Domain\bin\Debug\Code-Box.Domain.dll.config
+E:\Code-Box\Code-Box.Domain\bin\Debug\Code-Box.Domain.dll
+E:\Code-Box\Code-Box.Domain\bin\Debug\Code-Box.Domain.pdb
+E:\Code-Box\Code-Box.Domain\bin\Debug\EntityFramework.dll
+E:\Code-Box\Code-Box.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\Code-Box\Code-Box.Domain\bin\Debug\EntityFramework.xml
+E:\Code-Box\Code-Box.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\Code-Box\Code-Box.Domain\obj\Debug\Code-Box.Domain.csprojAssemblyReference.cache
+E:\Code-Box\Code-Box.Domain\obj\Debug\Code-Box.Domain.csproj.CoreCompileInputs.cache
+E:\Code-Box\Code-Box.Domain\obj\Debug\Code-Box.Domain.csproj.CopyComplete
+E:\Code-Box\Code-Box.Domain\obj\Debug\Code-Box.Domain.dll
+E:\Code-Box\Code-Box.Domain\obj\Debug\Code-Box.Domain.pdb

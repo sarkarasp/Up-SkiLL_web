@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewBag.Title = "ToturialsIndex";
+    Layout = "~/Views/Shared/_Layout -Toturials.cshtml";
+}
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio">
+    <div class="container-custom">
+       
+        <div class="container-fluid ">
+            
+            <div class="row">
+                <aside class="col-md-2">
+                    @*<div class="bs-example">
+                        <ul class="list-group nav-stacked">
+                            <li class="list-group-item"><a href="#">Introduction to Asp.net MVC</a></li>
+                            <li class="list-group-item">Documents</li>
+                            <li class="list-group-item">Music</li>
+                            <li class="list-group-item">Videos</li>
+                        </ul>
+                    </div>*@
+                    <ul class=" nav nav-list primary bs-example">
+                        <!-- 'tabs-right' for right tabs -->
+                        @*@foreach (var item in ViewBag.Topics)
+                        {
+                            <li class="active"><a href="#home">item</a></li>
+                        }*@
+                        <li class="active"><a href="#home">Introduction to Asp.net MVC</a></li>
+                        <li class="nav-divider"></li>
+                        <li><a href="#profile">MVC Architecture</a></li>
+                        <li class="nav-divider"></li>
+                        <li><a href="#messages">MVC Version History</a></li>
+                        <li class="nav-divider"></li>
+                        <li><a href="#settings">First MVC App</a></li>
+                        <li class="nav-divider"></li>                        
+                        <li><a href="#profile">Folder Structure</a></li>
+                        <li class="nav-divider"></li>
+                        <li><a href="#messages">Routing</a></li>
+                        <li class="nav-divider"></li>
+                        <li><a href="#settings">Controller</a></li>
+                        <li class="nav-divider"></li>
+                        <li><a href="#profile">Action Methods</a></li>
+                        <li class="nav-divider"></li>
+                        <li><a href="#messages">Action Selector</a></li>
+                        <li class="nav-divider"></li>
+                        <li><a href="#settings">Action Verbs</a></li>
+                        
+                    </ul>
+                </aside>
+                @*<div class="row">
+                    <div class="paging-custom">
+                        <ul class="pager">
+                            <li class="pull-left"><a href="#">&larr;Previous</a></li>
+                            <li class="col-md-4 col-sm-6 pull-right"><a href="#">Next&rarr;</a></li>
+                        </ul>
+                    </div>
+                </div>*@
+                <div class="col-md-8 col-sm-12">
+                    <ul class="pager paging-custom">
+                        <li class="pull-left"><a href="#">&larr;Previous</a></li>
+                        <li class="col-md-4 col-sm-6 pull-right"><a href="#">Next&rarr;</a></li>
+                    </ul>
+                        <div class="edugate-layout-3">
+                            <img class="img-responsive img-circle" src="/img/img1.jpg" alt="">
+                            <h3>C#</h3>
+                            <p>Learn about C# class, Objects, datatypes, conditions, loops, collections, File I/O, delegates, events,  etc.. </p>
+                           
+                        </div>
+                    <ul class="pager paging-custom">
+                        <li class="pull-left"><a href="#">&larr;Previous</a></li>
+                        <li class="col-md-4 col-sm-6 pull-right"><a href="#">Next&rarr;</a></li>
+                    </ul>
+                </div>
+
+                @*<div class="col-md-4 col-sm-6">
+                    <ul class="pager paging-custom">
+                        <li class="col-md-4 col-sm-6 pull-right"><a href="#">Next&rarr;</a></li>
+                    </ul>
+                    <div class="edugate-layout-3">
+                        <img class="img-responsive img-circle" src="/img/img_mvc.png" alt="">
+                        <h3>ASP.NET MVC</h3>
+                        <p>Learn ASP.NET MVC Architecture, controller, action method, routing, model, view, html helpers etc..</p>
+                        <p><a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success">Let Start &raquo;</a></p>
+                    </div>
+                </div>*@
+
+                <aside class="col-md-2">
+                    right side
+                </aside>
+
+            </div>
+
+        </div>   
+              
+        <style type="text/css">
+                .list-group {
+                    width: 172px;
+                }
+
+                .bs-example {
+                    margin: 0px;
+                    float:left;
+                    padding-left:0px;
+                    border:1px solid;
+                    border-color:#e5e5e5;
+                    width:170px;
+                }
+                .paging-custom{
+    	                margin: 20px;
+                    }
+            </style>
+
+        </div>
+</section>

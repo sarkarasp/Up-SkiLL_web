@@ -1,0 +1,146 @@
+﻿@model Code_Box.Models.PageDetailsModel
+
+@{
+    ViewBag.Title = "CSharpTutorial";
+    Layout = "~/Views/Shared/_Layout -Toturials.cshtml";
+}
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+<!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <input type="hidden" id="urlnext" value="" />
+        @Html.Hidden("StudentId")
+        <div class="container-course">
+
+            <div class="container-fluid ">  
+
+                <div class="row">
+                    <aside class="col-md-2">
+                        <ul class=" nav nav-list primary bs-example">
+                            <!-- 'tabs-right' for right tabs -->
+                            <li><h3><span style="margin-left:12px">@Model.verticalViewModels.Select(x =>x.CourseName).FirstOrDefault()</span></h3></li>
+                            <hr />
+                            @foreach (var item in Model.verticalViewModels)
+                            {
+                                @*<li class="active side-menu-text"><a href="@Url.Content(item.)">@item.navName</a></li>*@
+                                if (item.DocPath == null)
+                                {
+                                    <li class="active side-menu-text"><a onclick="GetDetails(@item.CourseId, @item.TopicId)">@item.TopicName</a></li>
+                                }
+                                else
+                                {
+                                    <li class="active side-menu-text"><a onclick="GetDetails(@item.CourseId, @item.TopicId)">@item.TopicName</a></li>
+                                }
+
+                            }
+
+                        </ul>
+                    </aside>
+                    <div class="col-md-8 col-sm-12">
+                        <ul class="pager paging-custom">
+                            <li class="pull-left"><a href="#">&larr;Previous</a></li>
+                            <li class="pull-right"><a id="nextLink" href="#" onclick="NextPage(@Model.CourseIds, @Model.topicIds)">Next&rarr;</a></li>
+                        </ul>
+                        <hr />
+                        <div class="edugate-layout-3">
+                            <!--Header-->
+                            @*<h3>&nbsp;&nbsp; Introduction to C#</h3>*@
+                            <!--End Header-->
+                            <!--Topic Details-->
+                            <p>
+                                <div>
+                                    @Html.Raw(ViewBag.ContainsHtml)
+                                </div>
+                            </p>
+
+                            <!--Code Block-->
+                            @*<pre><p>This block denotes sample text...</p>
+                            <var>y</var> = <var>m</var><var>x</var> + <var>b</var></pre>*@
+                        </div>
+                        <ul class="pager paging-custom">
+                            <li class="pull-left"><a href="#">&larr;Previous</a></li>
+                            <li class="pull-right"><a href="#">Next&rarr;</a></li>
+                        </ul>
+                    </div>
+                    <aside class="col-md-2">
+                        right side
+                    </aside>
+
+                </div>
+
+            </div>
+
+            <style type="text/css">
+                .list-group {
+                    width: 172px;
+                }
+
+                .bs-example {
+                    margin: 0px;
+                    float: left;
+                    padding-left: 0px;
+                    border: 1px solid;
+                    border-color: #e5e5e5;
+                    background-color: #fafafa;
+                    width: 220px;
+                    height: 600px;
+                    overflow-x: auto;
+                    overflow-y: auto;
+                }
+
+                .paging-custom {
+                    margin: 20px;
+                }
+            </style>
+
+        </div>
+    </section>
+<script>
+    //$(document).ready(function () {
+        function GetDetails(courseId, TopicId) {
+
+            var link = document.getElementById("nextLink");
+            document.getElementById("StudentId").value = "sudipto";
+
+            $.ajax({
+                type: "GET",
+                url: "/CSharp/TopicDetails",
+                data: { courseId: courseId, topicId: TopicId },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+                   // alert(data);
+                    document.getElementById("urlnext").value = "sudipto";
+                    link.setAttribute("href", data);
+                    window.location.href = data;
+
+                }
+            });
+        }
+   // });
+
+    function NextPage(courseIds, topicIds) {
+
+        var link = window.location.href
+       // alert(topicIds);
+        $.ajax({
+            type: "GET",
+            url: "/CSharp/NextDetails",
+            data: { courseId: courseIds, topicId: topicIds },
+            datatype: "json",
+            traditional: true,
+            success: function (data) {
+               // alert(data);
+                //document.getElementById("urlnext").value = "sudipto";
+                //link.setAttribute("href", data);
+                window.location.href = data;
+
+            }
+        });
+
+    }
+
+    
+</script>
+
+
+

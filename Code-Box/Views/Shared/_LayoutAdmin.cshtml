@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+   <link href="~/Content/Site.css" rel="stylesheet" />
+    @*<link href="~/Content/freelancer.min.css" rel="stylesheet" />*@
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+<body id="page-top" class="index">    
+    <nav class="navbar navbar-fixed-top navbar-custom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle glyphicon glyphicon-th-large">
+                                
+                </button>
+                <a href="#" class="navbar-brand">
+                    <img src="~/img/cmpLogo.png" width="90" height="50"/>
+                </a>
+            </div>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    @*<li class="active"><a href="#">Home</a></li>
+                    @foreach (var item in ViewBag.Coures)
+                    {
+                        <li class=""><a href="/CSharp/CSharpTutorial?courseId=@item.CoursesID">@item.CourseName</a></li>
+                        
+                    }*@
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">C#sarkar</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">ASP.NET MVC</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">WEB API</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">WCF</a></li>
+                    <li><a href="#">Java Script</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">JQuery</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Angular JS</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">node js</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+    <div class="body-content">
+        @RenderBody()
+        <hr />
+        @*<footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>*@
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="footer-above">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col col-md-3">
+                            <h5>About Code-Box</h5>
+                            <p>
+                                3481 Melrose Place
+                                <br>Beverly Hills, CA 90210
+                            </p>
+                        </div>
+                        <div class="footer-col col-md-3">
+                            <h5>Around the Web</h5>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-col col-md-3">
+                            <h5>Tutorials</h5>
+                            <ul class="col-md-6">
+                                <li>C#</li>
+                                <li> MVC</li>
+                                <li>web Api</li>
+                                <li>WCF</li>
+                            </ul>
+                            <ul class="col-md-6">
+                                <li>Java Script</li>
+                                <li>JQuery</li>
+                                <li>AngularJS</li>
+                                <li>node Js</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col col-md-3">
+                            <h5>Get in Touch</h5>
+                            <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-below">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            Copyright &copy; Your Website 2016
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
